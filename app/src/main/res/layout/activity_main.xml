@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address:"
+
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:id="@+id/SubjectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+
+        android:paddingTop="10dp"
+        android:layout_below="@+id/AddressLabel"/>
+    <TextView
+        android:id="@+id/MessageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+
+        android:paddingTop="10dp"
+        android:layout_below="@+id/SubjectLabel"/>
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="100dp"
+        android:paddingRight="40dp"
+        android:layout_alignBottom="@+id/AddressLabel"
+        />
+    <EditText
+        android:id="@+id/Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="100dp"
+        android:paddingRight="40dp"
+        android:layout_alignBottom="@+id/SubjectLabel"/>
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="100dp"
+        android:paddingRight="40dp"
+        android:layout_alignBottom="@+id/MessageLabel"/>
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:text="S"/>
+
+</RelativeLayout>
